@@ -35,21 +35,21 @@
 </p>
 
 ---
-
 ### 📊 GitHub Statistics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=hungdn1701&show_icons=true&count_private=true&theme=tokyonight&hide_border=true" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hungdn1701&layout=compact&langs_count=8&theme=tokyonight&hide_border=true" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api?username=hungdn1701&show_icons=true&count_private=true&theme=radical&hide_border=true" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hungdn1701&layout=compact&langs_count=8&theme=radical&hide_border=true" height="165" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=hungdn1701&theme=tokyonight&hide_border=true" height="165" />
+  <img src="https://streak-stats.demolab.com?user=hungdn1701&theme=radical&hide_border=true" height="165" />
 </p>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=hungdn1701&theme=tokyonight&no-bg=true&no-frame=true&margin-w=8&row=1" />
+  <img src="https://github-profile-trophy.vercel.app/?username=hungdn1701&theme=radical&no-bg=true&no-frame=true&margin-w=8&row=1" />
 </p>
+
 ---
 
 <!--START_SECTION:activity-->
