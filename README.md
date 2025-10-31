@@ -61,6 +61,6 @@
 ---
 
 ### 📫 Let's Connect
-Feel free to reach out: [Email](hungdn@ptit.edu.vn) • [LinkedIn](#) • [Twitter](#)
+Email: hungdn@ptit.edu.vn
 
 
