@@ -5,21 +5,21 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/hungdn1701"><img src="https://komarev.com/ghpvc/?username=hungdn1701&style=flat&label=Profile+Views" alt="views" /></a>
-  <a href="https://github.com/hungdn1701?tab=followers"><img alt="followers" src="https://img.shields.io/github/followers/hungdn1701?style=flat" /></a>
-  <a href="https://github.com/hungdn1701"><img alt="stars" src="https://img.shields.io/github/stars/hungdn1701?affiliations=OWNER&style=flat" /></a>
+  <a href="https://github.com/hungdn1701"><img src="https://komarev.com/ghpvc/?username=hungdn1701&style=flat&label=Profile+Views" alt="Profile Views" /></a>
+  <a href="https://github.com/hungdn1701?tab=followers"><img alt="Followers" src="https://img.shields.io/github/followers/hungdn1701?style=flat" /></a>
+  <a href="https://github.com/hungdn1701"><img alt="Stars" src="https://img.shields.io/github/stars/hungdn1701?affiliations=OWNER&style=flat" /></a>
 </p>
 
 ---
 
 ### 🧭 About Me
 
-- 🎓 Lecturer and Software Architect with experience in enterprise systems.
-- 🧠 Specialized in **backend development** and **microservice architecture**.
-- 🧰 Experienced in Java, C#, JavaScript/TypeScript, and DevOps workflows.
-- 🗄️ Worked across various databases: **PostgreSQL, MySQL, SQL Server, MongoDB**.
-- ⚙️ Interested in **system scalability**, **observability**, and **distributed design**.
-- 🌐 Personal site: [hungdn1701.github.io](https://hungdn1701.github.io)
+- 🎓 Lecturer & Software Architect with **10+ years’ experience** across enterprise systems and academia.  
+- 🧠 Specialized in **backend development**, **microservice architecture**, **system reliability**, and **observability**.  
+- 🧰 Hands-on programming with **Java, C#, JavaScript/TypeScript**, plus DevOps tooling & CI/CD practices.  
+- 🗄️ Experienced with data systems from **PostgreSQL, MySQL, SQL Server** to **MongoDB**, and distributed data platforms.  
+- ⚙️ Passionate about building scalable systems, mentoring dev teams, and bridging research & production.  
+- 🌐 Website: [hungdn1701.github.io](https://hungdn1701.github.io)
 
 ---
 
@@ -35,22 +35,37 @@
 </p>
 
 ---
-### 📊 GitHub Statistics
+
+### 📊 GitHub Statistics (Dark Theme)
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=hungdn1701&show_icons=true&count_private=true&theme=radical&hide_border=true" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hungdn1701&layout=compact&langs_count=8&theme=radical&hide_border=true" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api?username=hungdn1701&show_icons=true&count_private=true&theme=tokyonight&hide_border=true" height="165" alt="GitHub stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hungdn1701&layout=compact&langs_count=8&theme=tokyonight&hide_border=true" height="165" alt="Top languages" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=hungdn1701&theme=radical&hide_border=true" height="165" />
+  <img src="https://streak-stats.demolab.com?user=hungdn1701&theme=tokyonight&hide_border=true" height="165" alt="Streak stats" />
 </p>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=hungdn1701&theme=radical&no-bg=true&no-frame=true&margin-w=8&row=1" />
+  <img src="https://github-profile-trophy.vercel.app/?username=hungdn1701&theme=tokyonight&no-bg=true&no-frame=true&margin-w=8&row=1" alt="Trophies" />
 </p>
 
 ---
 
+
+
 <!--START_SECTION:activity-->
 <!--END_SECTION:activity-->
+
+---
+
+### 📫 Let's Connect
+
+I’m always open to **collaborations**, **guest lectures**, or **mentoring opportunities**.  
+Feel free to reach out: [Email](hungdn@ptit.edu.vn) • [LinkedIn](#) • [Twitter](#)
+
+---
+
+> “Simplicity is the prerequisite for reliability.” — Edsger W. Dijkstra
+
