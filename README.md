@@ -36,7 +36,7 @@
 
 ---
 
-### 📊 GitHub Statistics (Dark Theme)
+### 📊 GitHub Statistics
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=hungdn1701&show_icons=true&count_private=true&theme=tokyonight&hide_border=true" height="165" alt="GitHub stats" />
@@ -61,11 +61,6 @@
 ---
 
 ### 📫 Let's Connect
-
-I’m always open to **collaborations**, **guest lectures**, or **mentoring opportunities**.  
 Feel free to reach out: [Email](hungdn@ptit.edu.vn) • [LinkedIn](#) • [Twitter](#)
 
----
-
-> “Simplicity is the prerequisite for reliability.” — Edsger W. Dijkstra
 
