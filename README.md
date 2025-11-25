@@ -14,11 +14,11 @@
 
 ### 🧭 About Me
 
-- 🎓 Lecturer & Software Architect with **10+ years’ experience** across enterprise systems and academia.  
-- 🧠 Specialized in **backend development**, **microservice architecture**, **system reliability**, and **observability**.  
-- 🧰 Hands-on programming with **Java, C#, JavaScript/TypeScript**, plus DevOps tooling & CI/CD practices.  
-- 🗄️ Experienced with data systems from **PostgreSQL, MySQL, SQL Server** to **MongoDB**, and distributed data platforms.  
-- ⚙️ Passionate about building scalable systems, mentoring dev teams, and bridging research & production.  
+- 🎓 Lecturer in the Information Technology Department at **PTIT** and software architect/backend engineer with **10+ years’ experience** in academia and industry.  
+- 🧠 Focused on **backend development**, **service-oriented and microservice-based systems**, and **distributed systems**.  
+- 🧰 Hands-on programming with **Java, C#, JavaScript/TypeScript, Python, Go**, deploying services on Linux, Docker, and **VPS/on-premise environments** with CI/CD (Jenkins, GitHub Actions).  
+- 🗄️ Experienced with data systems including **PostgreSQL, SQL Server, Oracle, MongoDB, Redis**, and **data integration and processing**, such as GIS and spatial data.  
+- ⚙️ Passionate about building scalable, reliable systems and mentoring students and development teams, bridging classroom and production practice.  
 - 🌐 Website: [hungdn1701.github.io](https://hungdn1701.github.io)
 
 ---
