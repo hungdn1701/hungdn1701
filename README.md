@@ -1,7 +1,7 @@
 <!-- Header -->
 <h1 align="center">Hi, I'm Hung Dang 👋</h1>
 <p align="center">
-  Lecturer • Backend & System Architect • DevOps Enthusiast
+  Lecturer • Backend Engineer • System Architect
 </p>
 
 <p align="center">
@@ -14,11 +14,11 @@
 
 ### 🧭 About Me
 
-- 🎓 Lecturer in the Information Technology Department at **PTIT** and software architect/backend engineer with **10+ years’ experience** in academia and industry.  
+- 🎓 Lecturer in the Information Technology Department at **PTIT** and software architect/backend engineer with experience in both academia and industry.  
 - 🧠 Focused on **backend development**, **service-oriented and microservice-based systems**, and **distributed systems**.  
 - 🧰 Hands-on programming with **Java, C#, JavaScript/TypeScript, Python, Go**, deploying services on Linux, Docker, and **VPS/on-premise environments** with CI/CD (Jenkins, GitHub Actions).  
 - 🗄️ Experienced with data systems including **PostgreSQL, SQL Server, Oracle, MongoDB, Redis**, and **data integration and processing**, such as GIS and spatial data.  
-- ⚙️ Passionate about building scalable, reliable systems and mentoring students and development teams, bridging classroom and production practice.  
+- ⚙️ Into building scalable, reliable systems. Mentor students and dev teams — from concepts to working systems.  
 - 🌐 Website: [hungdn1701.github.io](https://hungdn1701.github.io)
 
 ---
