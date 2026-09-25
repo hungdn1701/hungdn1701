@@ -1,7 +1,10 @@
 <!-- Header -->
-<h1 align="center">Hi, I'm Hung Dang 👋</h1>
+<h1 align="center">Hi, I'm Hung N. Dang 👋</h1>
 <p align="center">
-  Lecturer • Backend Engineer • System Architect
+  Lecturer &amp; Researcher · PTIT
+</p>
+<p align="center">
+  <i>"The best way to learn is to teach, and the best way to teach is to build."</i>
 </p>
 
 <p align="center">
