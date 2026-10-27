@@ -27,7 +27,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Refresh cards and recent repositories
+      - name: Refresh cards and stats
         run: node scripts/update.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
