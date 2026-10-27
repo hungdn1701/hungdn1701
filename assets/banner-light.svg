@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="280" viewBox="0 0 1000 280" role="img" aria-label="Hung N. Dang. Backend systems, teaching, information theory.">
+<title>Hung N. Dang. Backend systems, teaching, information theory.</title>
+<style>
+@font-face{font-family:'JB';font-weight:700;src:url(data:font/woff2;base64,d09GMgABAAAAAAQAAA8AAAAAB+gAAAOpAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGhYbIBwqBmA/U1RBVEwAdBEICoRMg24BNgIkAxYLFgAEIAWERgcgG2sGAB6FcbNzRKOKJl5DEVVmNx7+367v97lVT7cGRgQ4EyOHUr+0O5qJiJV/gSuHMrj/fq09TPRUdNfP/4JnhpAI/UImXqbadCIh0f8AZTL/55p814K3LLEhRv5FhK51HA20N6GBR1HRGiyJNqAdkc6GXMg7IbVuy/sCAl0ASQhtQiAbYt/Q8pX+OEwqoQkQyMa5NIwZb/7IPtSETSRifZm2pue0kOppK7BOnx67ScMMEh2Edpi7dimAl4zAFf/+/xn8t4wpQEAal35ihDEhtEvoYxhjDJ/YT6IhHDxaYYe6C6UBhiFa03OkrSD9GoWQogdAgIQCfYwI9DFqL9DHohGlEYTs3IIqCE1cE57vbP7gG897xuPuuemySwXxqyGadEfIoA9Q4Xl8DyjfkivpNwm65C69hs4cdFvvNTvTUjU+/1yqffZZ3lw1Po2i85OcqTZVRVXmIic7v+vqF1/E4t99Be/dVE/Zzi+rSqn+INffG5A/GRquzXPkybXPNje+jMj159Te3xRV48WILQ3kcrrBCGYmVcmqzOXtjU+zbZ8cEz+i9nHVUqlmd1bnLHzxtK8eHBJEV8Bo2D7LzX4SnZ/O1/pY7aN133y99ohKhzmXHDqcVXtz3bzyf0ZP+f/MnRD45tzYwdhz2vwlgyXc31x5Z8P08WSxfVS2a9/hWxuGjEWKTWMw+OvYtC/jjzCp2uv0CXrBVSz4MLnhVK6EoXqSuy+vag0Z11FBYVXwbC/jvh0z3g9vjx64N+nyuIlD+OD+so1eW7zaqTDlZI+vL9cfnMhz57FGubxiErtlZZlbLFbJy3IVBMY9UMe79qDPESkzOeo5L1WIhC55Gngd1AmEJZ8TCrVY5FYknpPYPQJeB28kj3fMb3AEgAs1gTSzXPzp5bt7us//rb0ovg/ffvLwKnzX8vr+mt88SLnix2iVQPA/eNNWBP1/zyGGCFt4WUiWT4CbmluAzwcC2UXtHtNacr9CQqWuEGUHnsMWhCHeBUk3XwkK8/0KSlPiWNBiUAT5rSYFqRB0iUuCVu1xE7r7iIeH9TAdj1impe1eF4VAQg5Jic+xQ/FcBAPvFkOsSMkKSlNPMqClqRUL6+pAs6NWR8yC04HMd3TRjsu6WRhp69ESESFQEBKnSqimpUEkUl2yxh786spiURhpclgVXVJJKQkJ3ahWurp7CMo33vU6nBJJ2H07KEzkUOxWxURSlvcBVtJk1XkglQKlJvrEPqqiaQRonhQIAg==) format('woff2')}
+@font-face{font-family:'JB';font-weight:400;src:url(data:font/woff2;base64,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) format('woff2')}
+.n{font-family:'JB', ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace;font-weight:700}
+.b{font-family:'JB', ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace;font-weight:400}
+.c{animation:blink 1.1s steps(1) infinite}
+.tw{animation:tw 7s ease-in-out infinite}
+.h{transform-box:fill-box;transform-origin:center;animation:pulse 6s ease-in-out infinite}
+@keyframes blink{50%{opacity:0}}
+@keyframes tw{0%,100%{opacity:.12}50%{opacity:.7}}
+@keyframes pulse{0%,100%{opacity:.12;transform:scale(1)}50%{opacity:.26;transform:scale(1.18)}}
+@media (prefers-reduced-motion:reduce){.c,.tw,.h{animation:none}}
+</style>
+<defs>
+<linearGradient id="hz" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#5d6b65" stop-opacity="0"/><stop offset=".5" stop-color="#5d6b65" stop-opacity=".7"/><stop offset="1" stop-color="#5d6b65" stop-opacity="0"/></linearGradient>
+<linearGradient id="cone" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#0b7d63" stop-opacity=".2"/><stop offset="1" stop-color="#0b7d63" stop-opacity="0"/></linearGradient>
+</defs>
+<rect x=".5" y=".5" width="999" height="279" rx="10" fill="#f5f7f6" stroke="#d5dcd9"/>
+<g fill="#0f1714">
+<circle cx="151" cy="46" r="0.8" opacity="0.43" class="tw" style="animation-delay:-5s"/>
+<circle cx="28" cy="65" r="1" opacity="0.22"/>
+<circle cx="333" cy="45" r="0.8" opacity="0.36"/>
+<circle cx="967" cy="68" r="0.8" opacity="0.4"/>
+<circle cx="813" cy="20" r="1" opacity="0.29"/>
+<circle cx="804" cy="87" r="1" opacity="0.48" class="tw" style="animation-delay:-7s"/>
+<circle cx="860" cy="73" r="0.8" opacity="0.27"/>
+<circle cx="637" cy="32" r="1.5" opacity="0.2"/>
+<circle cx="816" cy="51" r="0.9" opacity="0.28"/>
+<circle cx="391" cy="27" r="1.3" opacity="0.26"/>
+<circle cx="732" cy="52" r="1.5" opacity="0.29" class="tw" style="animation-delay:-5s"/>
+<circle cx="893" cy="66" r="1.3" opacity="0.29"/>
+<circle cx="377" cy="17" r="1" opacity="0.4"/>
+<circle cx="220" cy="40" r="0.8" opacity="0.22"/>
+<circle cx="612" cy="42" r="1.2" opacity="0.44"/>
+<circle cx="191" cy="52" r="0.9" opacity="0.27" class="tw" style="animation-delay:-3s"/>
+<circle cx="275" cy="44" r="1" opacity="0.31"/>
+<circle cx="903" cy="48" r="0.9" opacity="0.19"/>
+<circle cx="547" cy="40" r="1" opacity="0.23"/>
+<circle cx="768" cy="152" r="1.1" opacity="0.4"/>
+<circle cx="604" cy="27" r="1.3" opacity="0.31" class="tw" style="animation-delay:-3s"/>
+<circle cx="29" cy="104" r="1.1" opacity="0.42"/>
+<circle cx="405" cy="35" r="1" opacity="0.46"/>
+<circle cx="866" cy="25" r="1.4" opacity="0.29"/>
+<circle cx="165" cy="23" r="0.8" opacity="0.38"/>
+<circle cx="349" cy="36" r="1.1" opacity="0.37" class="tw" style="animation-delay:-7s"/>
+<circle cx="90" cy="55" r="1" opacity="0.25"/>
+<circle cx="538" cy="15" r="1.2" opacity="0.38"/>
+<circle cx="347" cy="35" r="1.1" opacity="0.39"/>
+<circle cx="550" cy="32" r="0.8" opacity="0.24"/>
+<circle cx="974" cy="88" r="1.5" opacity="0.42" class="tw" style="animation-delay:-2s"/>
+<circle cx="252" cy="54" r="0.8" opacity="0.43"/>
+<circle cx="832" cy="81" r="0.9" opacity="0.32"/>
+<circle cx="492" cy="32" r="1" opacity="0.3"/>
+<circle cx="323" cy="22" r="1.3" opacity="0.39"/>
+<circle cx="454" cy="27" r="1.1" opacity="0.18" class="tw" style="animation-delay:-7s"/>
+<circle cx="376" cy="33" r="1.3" opacity="0.29"/>
+<circle cx="21" cy="128" r="0.8" opacity="0.31"/>
+<circle cx="101" cy="30" r="1" opacity="0.29"/>
+<circle cx="339" cy="54" r="1.4" opacity="0.38"/>
+<circle cx="774" cy="156" r="1.2" opacity="0.42" class="tw" style="animation-delay:-5s"/>
+<circle cx="42" cy="15" r="1.4" opacity="0.31"/>
+<circle cx="877" cy="17" r="0.8" opacity="0.34"/>
+<circle cx="779" cy="143" r="1.3" opacity="0.27"/>
+<circle cx="34" cy="170" r="1.4" opacity="0.2"/>
+<circle cx="887" cy="98" r="1.1" opacity="0.29" class="tw" style="animation-delay:-6s"/>
+</g>
+<text class="n" x="56" y="118" font-size="64" fill="#0f1714">Hung N. Dang</text>
+<text class="b" x="56" y="160" font-size="24"><tspan fill="#46544e">backend systems</tspan><tspan fill="#0b7d63"> / </tspan><tspan fill="#46544e">teaching</tspan><tspan fill="#0b7d63"> / </tspan><tspan fill="#46544e">information theory</tspan></text>
+<rect class="c" x="740.8" y="141" width="13" height="23" fill="#0b7d63"/>
+<path d="M0 200H1000" stroke="url(#hz)" stroke-width="1"/>
+<path d="M56 200v8M68 200v4M80 200v4M92 200v4M104 200v4M116 200v8M128 200v4M140 200v4M152 200v4M164 200v4M176 200v8M188 200v4M200 200v4M212 200v4M224 200v4M236 200v8M248 200v4M260 200v4M272 200v4M284 200v4M296 200v8M308 200v4M320 200v4M332 200v4M344 200v4M356 200v8M368 200v4M380 200v4M392 200v4M404 200v4M416 200v8M428 200v4M440 200v4M452 200v4M464 200v4M476 200v8M488 200v4M500 200v4M512 200v4M524 200v4M536 200v8M548 200v4M560 200v4M572 200v4M584 200v4M596 200v8M608 200v4M620 200v4M632 200v4M644 200v4M656 200v8M668 200v4M680 200v4M692 200v4M704 200v4M716 200v8M728 200v4M740 200v4M752 200v4M764 200v4M776 200v8M788 200v4M800 200v4M812 200v4M824 200v4M836 200v8M848 200v4M860 200v4M872 200v4M884 200v4M896 200v8M908 200v4M920 200v4M932 200v4M944 200v4" stroke="#5d6b65" stroke-opacity=".35" stroke-width="1" fill="none"/>
+<path d="M868 150L816 200H920Z" fill="url(#cone)"/>
+<path d="M868 152V200" stroke="#5d6b65" stroke-width="2" stroke-opacity=".8"/>
+<circle class="h" cx="868" cy="148" r="18" fill="#0b7d63" opacity=".16"/>
+<circle cx="868" cy="148" r="4" fill="#0b7d63"/>
+<text class="b" x="56" y="254" font-size="14" fill="#5d6b65">Hanoi · 21.03°N 105.85°E</text>
+</svg>

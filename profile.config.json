@@ -1,0 +1,30 @@
+{
+  "user": "hungdn1701",
+  "featured": [
+    {
+      "repo": "microservices-assignment-starter",
+      "description": "Starter template for a microservices group assignment.",
+      "tags": ["Docker", "Make", "Shell"]
+    },
+    {
+      "repo": "network-programming-starter",
+      "description": "Starter template for the Network Programming (INT1433) assignment.",
+      "tags": ["Docker", "Make", "Shell"]
+    },
+    {
+      "repo": "ptit-microservice-textbook",
+      "description": "Vietnamese SOA and microservices textbook: 12 chapters, 102 interactive diagrams.",
+      "tags": ["Open textbook", "HTML"]
+    },
+    {
+      "repo": "ai-account-quota",
+      "description": "Run two Claude Code or Codex CLI accounts side by side and check each one's quota.",
+      "tags": ["Bash", "cross-platform"]
+    }
+  ],
+  "now": {
+    "limit": 4,
+    "maxAgeDays": 120,
+    "exclude": ["^hungdn1701$", "^jnp2019", "^python$", "^contributors-wall$"]
+  }
+}
