@@ -22,9 +22,7 @@
       "tags": ["Bash", "cross-platform"]
     }
   ],
-  "now": {
-    "limit": 4,
-    "maxAgeDays": 120,
-    "exclude": ["^hungdn1701$", "^jnp2019", "^python$", "^contributors-wall$"]
+  "stats": {
+    "starters": "-starter$"
   }
 }

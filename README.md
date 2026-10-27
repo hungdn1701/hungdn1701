@@ -1,30 +1,8 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-  <img alt="Hung N. Dang: backend systems, teaching, information theory" src="assets/banner-dark.svg" width="100%">
+  <img alt="Hung N. Dang, Lecturer &amp; Researcher · PTIT. The best way to learn is to teach, and the best way to teach is to build." src="assets/banner-dark.svg" width="100%">
 </picture>
-
-> The best way to learn is to teach, and the best way to teach is to build.
-
-### about
-
-Lecturer at PTIT, Hanoi, and backend engineer. I build service-oriented and distributed systems, and teach students to design, ship, and run them.
-
-```text
-focus     backend, distributed systems
-teaching  microservices, networking
-research  information theory, MIMO, LDPC
-```
-
-### now
-
-<!-- NOW:START -->
-- [`network-programming`](https://github.com/hungdn1701/network-programming) — Lập trình mạng (INT1433) — khung học phần, bản xem trước bài... <sub>pushed 2026-10-26</sub>
-- [`mobile-app-starter`](https://github.com/hungdn1701/mobile-app-starter) — Starter template for Mobile Application Development (INT1449)... <sub>pushed 2026-10-13</sub>
-- [`dna-receiver-checks`](https://github.com/hungdn1701/dna-receiver-checks) — Reference Python components for DNA-storage receiver bit orde... <sub>pushed 2026-09-20</sub>
-<!-- NOW:END -->
-
-<sub>Refreshed daily from my public repositories.</sub>
 
 ### selected work
 
@@ -57,21 +35,34 @@ research  information theory, MIMO, LDPC
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/stack-languages-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/stack-languages-light.svg">
-    <img alt="Languages: Java, C#, TypeScript, Python, Go" src="assets/stack-languages-dark.svg" width="420">
+    <img alt="Languages: Java, C#, TypeScript, Python, Go" src="assets/stack-languages-dark.svg" width="224">
   </picture>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/stack-data-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/stack-data-light.svg">
-    <img alt="Data: PostgreSQL, SQL Server, Oracle, MongoDB, Redis" src="assets/stack-data-dark.svg" width="420">
+    <img alt="Data: PostgreSQL, SQL Server, Oracle, MongoDB, Redis" src="assets/stack-data-dark.svg" width="224">
   </picture>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/stack-delivery-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/stack-delivery-light.svg">
-    <img alt="Delivery: Linux, Docker, Jenkins, GitHub Actions" src="assets/stack-delivery-dark.svg" width="420">
+    <img alt="Delivery: Linux, Docker, Jenkins, GitHub Actions" src="assets/stack-delivery-dark.svg" width="224">
   </picture>
 </p>
 
 ### activity
+
+<p>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/stats-repos-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/stats-repos-light.svg">
+    <img alt="Stars and forks on my public repositories" src="assets/stats-repos-dark.svg" width="340">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/stats-activity-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/stats-activity-light.svg">
+    <img alt="Contributions in the last 12 months, by month" src="assets/stats-activity-dark.svg" width="340">
+  </picture>
+</p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hungdn1701/hungdn1701/output/snake-dark.svg">
@@ -82,4 +73,3 @@ research  information theory, MIMO, LDPC
 ### elsewhere
 
 Research, publications and teaching: [hungdn1701.github.io](https://hungdn1701.github.io) · [Google Scholar](https://scholar.google.com/citations?user=1MairvkAAAAJ) · [ORCID](https://orcid.org/0000-0001-6360-2824)
-Email: [hungdn@ptit.edu.vn](mailto:hungdn@ptit.edu.vn)
