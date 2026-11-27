@@ -1,6 +1,6 @@
-// Refreshes the data-driven parts of the profile:
-//   - assets/cards/*.svg  (featured repos with live star/fork counts)
+// Refreshes the data-driven part of the profile:
 //   - assets/stats-*.svg  (stars and forks on public repos, contributions by month)
+// Featured repos are GitHub's pinned repositories, set on the profile page, not here.
 // Runs in CI with GITHUB_TOKEN; locally: GITHUB_TOKEN=$(gh auth token) node scripts/update.mjs
 import fs from 'node:fs';
 import path from 'node:path';
@@ -27,75 +27,11 @@ for (let page = 1; ; page++) {
   repos.push(...batch);
   if (batch.length < 100) break;
 }
-const byName = new Map(repos.map((r) => [r.name, r]));
-
-// ---------- cards ----------
-const W = 340;
-const H = 140;
-const CHAR = 0.6; // JetBrains Mono advance, in em
-
-function wrap(text, maxChars, maxLines) {
-  const lines = [];
-  let line = '';
-  for (const word of text.split(/\s+/)) {
-    if (line && (line + ' ' + word).length > maxChars) {
-      lines.push(line);
-      line = word;
-    } else {
-      line = line ? line + ' ' + word : word;
-    }
-  }
-  if (line) lines.push(line);
-  if (lines.length > maxLines) {
-    const kept = lines.slice(0, maxLines);
-    kept[maxLines - 1] = kept[maxLines - 1].replace(/.{0,2}$/, '') + '...';
-    return kept;
-  }
-  return lines;
-}
-
 const fmt = (n) => (n >= 1000 ? `${(n / 1000).toFixed(1).replace(/\.0$/, '')}k` : String(n));
-
-function card(item, repo, t, b64) {
-  const titleSize = Math.min(14, (W - 42 - 20) / (item.repo.length * CHAR));
-  const desc = wrap(item.description, 40, 3);
-  const stars = fmt(repo.stargazers_count);
-  const forks = fmt(repo.forks_count);
-  const starTextX = 38;
-  const forkIconX = starTextX + stars.length * 12 * CHAR + 14;
-  const forkTextX = forkIconX + 18;
-  const label = `${item.repo}: ${item.description}`;
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(label)}">
-<title>${esc(label)}</title>
-<style>${fontFace(b64, 400)}text{font-family:${MONO};font-weight:400}</style>
-<rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="8" fill="${t.surface}" stroke="${t.border}"/>
-<g transform="translate(20 17)" fill="${t.dim}"><path d="${ICON.repo}"/></g>
-<text x="42" y="30" font-size="${titleSize.toFixed(2)}" fill="${t.accent}">${esc(item.repo)}</text>
-${desc.map((l, i) => `<text x="20" y="${58 + i * 19}" font-size="12" fill="${t.muted}">${esc(l)}</text>`).join('\n')}
-<line x1="20" y1="106" x2="${W - 20}" y2="106" stroke="${t.border}"/>
-<g transform="translate(20 114) scale(.875)" fill="${t.dim}"><path d="${ICON.star}"/></g>
-<text x="${starTextX}" y="126" font-size="12" fill="${t.dim}">${stars}</text>
-<g transform="translate(${forkIconX.toFixed(1)} 114) scale(.875)" fill="${t.dim}"><path d="${ICON.fork}"/></g>
-<text x="${forkTextX.toFixed(1)}" y="126" font-size="12" fill="${t.dim}">${forks}</text>
-<text x="${W - 20}" y="126" font-size="12" fill="${t.dim}" text-anchor="end">${esc(item.tags.join(' \u00b7 '))}</text>
-</svg>
-`;
-}
-
 const b64 = readB64('scripts/fonts/jbmono-400.woff2');
-for (const item of cfg.featured) {
-  const repo = byName.get(item.repo);
-  if (!repo) {
-    console.warn(`skip card: ${item.repo} not found among public repos`);
-    continue;
-  }
-  for (const [name, t] of Object.entries(themes)) {
-    write(`assets/cards/${item.repo}-${name}.svg`, card(item, repo, t, b64));
-  }
-}
 
 // ---------- stats ----------
-// Two cards the width of a repo card: stars and forks on my public repositories, and contributions by month.
+// Two cards 340 px wide, side by side: stars and forks on my public repositories, and contributions by month.
 async function graphql(query, variables) {
   if (!token) throw new Error('GraphQL needs GITHUB_TOKEN');
   const res = await fetch('https://api.github.com/graphql', {
@@ -191,4 +127,4 @@ ${bars}
   }
 }
 
-console.log(`cards: ${cfg.featured.length}, stars: ${stars}, forks: ${forks}, contributions: ${contributions ? contributions.total : 'skipped'}`);
+console.log(`stars: ${stars}, forks: ${forks}, contributions: ${contributions ? contributions.total : 'skipped'}`);

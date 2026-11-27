@@ -26,15 +26,14 @@ subset(400, ascii, path.join(ROOT, 'scripts', 'fonts', 'jbmono-400.woff2'));
 subset(600, ascii, path.join(ROOT, 'scripts', 'fonts', 'jbmono-600.woff2'));
 
 // ---------- banner ----------
-// Name and slogan come from workspace/IDENTITY.md in the hungdn1701.github.io repo.
-// The role line is left off the banner (author's choice, 2026-11-27): the profile header already says who this is.
-const NAME = 'Hung N. Dang';
+// The slogan comes from workspace/IDENTITY.md in the hungdn1701.github.io repo. On the GitHub profile the name and
+// the role line are left off (author's choice, 2026-11-27): the column beside the README already shows them.
 // The slogan on two lines; *word* marks a keyword (accent, bold), as on the home page of the site.
 const SLOGAN = ['The best way to *learn* is to *teach*,', 'and the best way to *teach* is to *build*.'];
 const SLOGAN_TEXT = SLOGAN.join(' ').replace(/\*/g, '');
 const KEYWORDS = SLOGAN.join(' ').match(/\*[^*]+\*/g).map((k) => k.slice(1, -1)).join('');
 
-const boldB64 = subset(700, NAME + KEYWORDS, path.join(tmp, 'bold.woff2'));
+const boldB64 = subset(700, KEYWORDS, path.join(tmp, 'bold.woff2'));
 const bodyB64 = subset(400, SLOGAN_TEXT, path.join(tmp, 'body.woff2'));
 
 function rng(seed) {
@@ -48,24 +47,26 @@ function rng(seed) {
 }
 
 // 800 wide rather than 1000 so the text stays legible when GitHub scales the banner down on a phone.
+// A night sky with a lamp on the horizon above, the slogan as a quote below.
 function banner(t) {
   const W = 800;
-  const H = 320;
+  const H = 230;
   const TX = 48;
-  const HORIZON = 186;
+  const HORIZON = 96;
+  const LAMP_Y = HORIZON - 52; // the lamp's head
+  const QY = HORIZON + 26; // top of the quote block
   const SIZE = 26; // slogan font size
   const QX = TX + 24; // slogan text, right of the quote rule
   const lampX = 690;
   const rand = rng(1701);
   const stars = [];
-  while (stars.length < 40) {
+  while (stars.length < 34) {
     const x = Math.round(rand() * 760 + 20);
-    const y = Math.round(rand() * 150 + 14);
+    const y = Math.round(rand() * (HORIZON - 30) + 12);
     const r = +(0.7 + rand() * 0.8).toFixed(1);
     const o = +(0.18 + rand() * 0.32).toFixed(2);
-    const text = x > 30 && x < 560 && y > 44 && y < 162;
-    const lamp = x > 630 && x < 750 && y > 100;
-    if (!text && !lamp) stars.push({ x, y, r, o, tw: stars.length % 5 === 0 });
+    const lamp = x > 630 && x < 750 && y > LAMP_Y - 30;
+    if (!lamp) stars.push({ x, y, r, o, tw: stars.length % 5 === 0 });
   }
   const ticks = [];
   for (let x = TX, i = 0; x <= W - TX; x += 12, i++) ticks.push(`M${x} ${HORIZON}v${i % 5 === 0 ? 8 : 4}`);
@@ -77,14 +78,14 @@ function banner(t) {
       .join('');
   const lastLen = SLOGAN[SLOGAN.length - 1].replace(/\*/g, '').length;
   const cursorX = QX + lastLen * SIZE * 0.6 + 6;
-  const label = `${NAME}. ${SLOGAN_TEXT}`;
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(label)}">
-<title>${esc(label)}</title>
+  const baseline = (i) => QY + 32 + i * 36;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(SLOGAN_TEXT)}">
+<title>${esc(SLOGAN_TEXT)}</title>
 <style>
 ${fontFace(boldB64, 700)}
 ${fontFace(bodyB64, 400)}
 text{font-family:${MONO}}
-.n,.k{font-weight:700}
+.k{font-weight:700}
 .b{font-weight:400}
 .c{animation:blink 1.1s steps(1) infinite}
 .tw{animation:tw 7s ease-in-out infinite}
@@ -103,17 +104,16 @@ text{font-family:${MONO}}
 <g fill="${t.text}">
 ${stars.map((s) => `<circle cx="${s.x}" cy="${s.y}" r="${s.r}" opacity="${s.o}"${s.tw ? ` class="tw" style="animation-delay:-${(s.x % 7) + 1}s"` : ''}/>`).join('\n')}
 </g>
-<text class="n" x="${TX}" y="124" font-size="68" fill="${t.text}" letter-spacing="-1">${esc(NAME)}</text>
 <path d="M0 ${HORIZON}H${W}" stroke="url(#hz)" stroke-width="1"/>
 <path d="${ticks.join('')}" stroke="${t.dim}" stroke-opacity=".35" stroke-width="1" fill="none"/>
-<path d="M${lampX} 136L${lampX - 50} ${HORIZON}H${lampX + 50}Z" fill="url(#cone)"/>
-<path d="M${lampX} 138V${HORIZON}" stroke="${t.dim}" stroke-width="2" stroke-opacity=".8"/>
-<circle class="h" cx="${lampX}" cy="134" r="18" fill="${t.accent}" opacity=".16"/>
-<circle cx="${lampX}" cy="134" r="4" fill="${t.accent}"/>
-<rect x="${TX}" y="212" width="${W - 2 * TX}" height="80" fill="url(#quote)"/>
-<rect x="${TX}" y="212" width="3" height="80" fill="${t.accent}"/>
-${SLOGAN.map((s, i) => `<text class="b" x="${QX}" y="${244 + i * 36}" font-size="${SIZE}" fill="${t.muted}">${line(s)}</text>`).join('\n')}
-<rect class="c" x="${cursorX.toFixed(1)}" y="${244 + (SLOGAN.length - 1) * 36 - 20}" width="13" height="24" fill="${t.accent}"/>
+<path d="M${lampX} ${LAMP_Y + 2}L${lampX - 50} ${HORIZON}H${lampX + 50}Z" fill="url(#cone)"/>
+<path d="M${lampX} ${LAMP_Y + 4}V${HORIZON}" stroke="${t.dim}" stroke-width="2" stroke-opacity=".8"/>
+<circle class="h" cx="${lampX}" cy="${LAMP_Y}" r="18" fill="${t.accent}" opacity=".16"/>
+<circle cx="${lampX}" cy="${LAMP_Y}" r="4" fill="${t.accent}"/>
+<rect x="${TX}" y="${QY}" width="${W - 2 * TX}" height="80" fill="url(#quote)"/>
+<rect x="${TX}" y="${QY}" width="3" height="80" fill="${t.accent}"/>
+${SLOGAN.map((s, i) => `<text class="b" x="${QX}" y="${baseline(i)}" font-size="${SIZE}" fill="${t.muted}">${line(s)}</text>`).join('\n')}
+<rect class="c" x="${cursorX.toFixed(1)}" y="${baseline(SLOGAN.length - 1) - 20}" width="13" height="24" fill="${t.accent}"/>
 </svg>
 `;
 }

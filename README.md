@@ -1,7 +1,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-  <img alt="Hung N. Dang. The best way to learn is to teach, and the best way to teach is to build." src="assets/banner-dark.svg" width="100%">
+  <img alt="The best way to learn is to teach, and the best way to teach is to build." src="assets/banner-dark.svg" width="100%">
 </picture>
 
 ### stack
