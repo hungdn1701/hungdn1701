@@ -1,33 +1,8 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-  <img alt="Hung N. Dang, Lecturer &amp; Researcher · PTIT. The best way to learn is to teach, and the best way to teach is to build." src="assets/banner-dark.svg" width="100%">
+  <img alt="Hung N. Dang. The best way to learn is to teach, and the best way to teach is to build." src="assets/banner-dark.svg" width="100%">
 </picture>
-
-### selected work
-
-<p>
-  <a href="https://github.com/hungdn1701/microservices-assignment-starter"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/cards/microservices-assignment-starter-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/cards/microservices-assignment-starter-light.svg">
-    <img alt="microservices-assignment-starter" src="assets/cards/microservices-assignment-starter-dark.svg" width="340">
-  </picture></a>
-  <a href="https://github.com/hungdn1701/network-programming-starter"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/cards/network-programming-starter-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/cards/network-programming-starter-light.svg">
-    <img alt="network-programming-starter" src="assets/cards/network-programming-starter-dark.svg" width="340">
-  </picture></a>
-  <a href="https://github.com/hungdn1701/ptit-microservice-textbook"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/cards/ptit-microservice-textbook-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/cards/ptit-microservice-textbook-light.svg">
-    <img alt="ptit-microservice-textbook" src="assets/cards/ptit-microservice-textbook-dark.svg" width="340">
-  </picture></a>
-  <a href="https://github.com/hungdn1701/ai-account-quota"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/cards/ai-account-quota-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/cards/ai-account-quota-light.svg">
-    <img alt="ai-account-quota" src="assets/cards/ai-account-quota-dark.svg" width="340">
-  </picture></a>
-</p>
 
 ### stack
 

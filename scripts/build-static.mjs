@@ -26,16 +26,15 @@ subset(400, ascii, path.join(ROOT, 'scripts', 'fonts', 'jbmono-400.woff2'));
 subset(600, ascii, path.join(ROOT, 'scripts', 'fonts', 'jbmono-600.woff2'));
 
 // ---------- banner ----------
-// Name, role line and slogan come from workspace/IDENTITY.md in the hungdn1701.github.io repo.
+// Name and slogan come from workspace/IDENTITY.md in the hungdn1701.github.io repo.
+// The role line is left off the banner (author's choice, 2026-11-27): the profile header already says who this is.
 const NAME = 'Hung N. Dang';
-const ROLE = 'Lecturer & Researcher · PTIT';
 // The slogan on two lines; *word* marks a keyword (accent, bold), as on the home page of the site.
 const SLOGAN = ['The best way to *learn* is to *teach*,', 'and the best way to *teach* is to *build*.'];
 const SLOGAN_TEXT = SLOGAN.join(' ').replace(/\*/g, '');
 const KEYWORDS = SLOGAN.join(' ').match(/\*[^*]+\*/g).map((k) => k.slice(1, -1)).join('');
 
 const boldB64 = subset(700, NAME + KEYWORDS, path.join(tmp, 'bold.woff2'));
-const roleB64 = subset(500, ROLE, path.join(tmp, 'role.woff2'));
 const bodyB64 = subset(400, SLOGAN_TEXT, path.join(tmp, 'body.woff2'));
 
 function rng(seed) {
@@ -78,16 +77,14 @@ function banner(t) {
       .join('');
   const lastLen = SLOGAN[SLOGAN.length - 1].replace(/\*/g, '').length;
   const cursorX = QX + lastLen * SIZE * 0.6 + 6;
-  const label = `${NAME}, ${ROLE}. ${SLOGAN_TEXT}`;
+  const label = `${NAME}. ${SLOGAN_TEXT}`;
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(label)}">
 <title>${esc(label)}</title>
 <style>
 ${fontFace(boldB64, 700)}
-${fontFace(roleB64, 500)}
 ${fontFace(bodyB64, 400)}
 text{font-family:${MONO}}
 .n,.k{font-weight:700}
-.r{font-weight:500}
 .b{font-weight:400}
 .c{animation:blink 1.1s steps(1) infinite}
 .tw{animation:tw 7s ease-in-out infinite}
@@ -106,8 +103,7 @@ text{font-family:${MONO}}
 <g fill="${t.text}">
 ${stars.map((s) => `<circle cx="${s.x}" cy="${s.y}" r="${s.r}" opacity="${s.o}"${s.tw ? ` class="tw" style="animation-delay:-${(s.x % 7) + 1}s"` : ''}/>`).join('\n')}
 </g>
-<text class="n" x="${TX}" y="108" font-size="68" fill="${t.text}" letter-spacing="-1">${esc(NAME)}</text>
-<text class="r" x="${TX + 2}" y="150" font-size="24" fill="${t.accent}">${esc(ROLE)}</text>
+<text class="n" x="${TX}" y="124" font-size="68" fill="${t.text}" letter-spacing="-1">${esc(NAME)}</text>
 <path d="M0 ${HORIZON}H${W}" stroke="url(#hz)" stroke-width="1"/>
 <path d="${ticks.join('')}" stroke="${t.dim}" stroke-opacity=".35" stroke-width="1" fill="none"/>
 <path d="M${lampX} 136L${lampX - 50} ${HORIZON}H${lampX + 50}Z" fill="url(#cone)"/>
